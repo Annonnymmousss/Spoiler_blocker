@@ -1,0 +1,184 @@
+/* General popup styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background-color: #f0f3f7;
+  color: #2c3e50;
+  max-width: 400px; /* Wider popup */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  margin: 20px auto;
+}
+
+/* Header styling */
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 20px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph instructions */
+p {
+  font-size: 15px;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  font-size: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 6px 12px rgba(52, 152, 219, 0.5);
+}
+
+/* Add button styling */
+button#addSpoiler {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.4s ease;
+}
+
+button#addSpoiler:hover {
+  background: linear-gradient(135deg, #3498db, #6dd5fa);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Spoiler item list styling */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  border-top: 2px solid #ecf0f1;
+}
+
+li {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove button styling */
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Tooltips for additional information */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #f39c12;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position above the element */
+  left: 50%;
+  margin-left: -90px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Info cards for additional data */
+.info-card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.info-card h3 {
+  font-size: 18px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Additional message for empty lists */
+.empty-list-message {
+  font-size: 15px;
+  color: #bdc3c7;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Smooth transitions for general elements */
+* {
+  transition: all 0.3s ease;
+}
