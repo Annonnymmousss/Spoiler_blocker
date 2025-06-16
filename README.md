@@ -48,10 +48,7 @@ The extension consists of several components:
 
 3. **Configure API Key**
    - Get a Google Generative AI API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Replace the empty `key` variable in the server files with your API key:
-   ```javascript
-   const key = "YOUR_GOOGLE_API_KEY_HERE";
-   ```
+   - Add API key in your env file
 
 4. **Start the server**
    ```bash
