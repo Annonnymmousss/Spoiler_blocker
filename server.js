@@ -4,7 +4,7 @@ const cors = require('cors');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
-const key = "AIzaSyCu729E16dLk-K2h_MOK-D3HrSBWARNaBU"; // Replace with your actual Google API key
+const key = ""; // Replace with your actual Google API key
 const genAI = new GoogleGenerativeAI(key);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
